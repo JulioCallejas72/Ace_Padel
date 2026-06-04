@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        /><!--Desde aqui termina el link que voy a agregar para los iconos-->
+
     <link rel="stylesheet" href="Estilo_Ace_1.css">
 </head>
 <body>
@@ -310,11 +314,20 @@
         <div class="footer-content" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
             <p class="copyright" style="margin: 0;">&copy; 2026 ACE PADEL Xalapa. Todos los derechos reservados.</p>
             
-            <div class="social-links-bar" style="display: flex; gap: 15px;">
-                <a href="#" class="social-icon-bar" style="font-weight: bold; font-size: 18px; text-decoration: none; color: var(--neon); border: 1px solid var(--neon); padding: 5px 10px; border-radius: 5px;">IG</a>
-                <a href="#" class="social-icon-bar" style="font-weight: bold; font-size: 18px; text-decoration: none; color: var(--neon); border: 1px solid var(--neon); padding: 5px 10px; border-radius: 5px;">TK</a>
-                <a href="#" class="social-icon-bar" style="font-weight: bold; font-size: 18px; text-decoration: none; color: var(--neon); border: 1px solid var(--neon); padding: 5px 10px; border-radius: 5px;">FB</a>
-            </div>
+            <ul class="wrapper">
+            <li class="icon facebook" data-url="https://www.facebook.com/profile.php?id=61560326020587">
+                <span class="tooltip">Facebook</span>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+            </li>
+            <li class="icon instgram" data-url="https://www.instagram.com/acepadel.xalapa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <span class="tooltip">Instgram</span>
+                <span><i class="fa-brands fa-instagram"></i></span>
+            </li>
+            <li class="icon youtube" data-url="https://youtu.be/BC_WiwtlhOo?si=RExqIi7sOxBbj3zc">
+                <span class="tooltip">Youtube</span>
+                <span><i class="fa-brands fa-youtube"></i></span>
+            </li>
+        </ul>
         </div>
     </footer>
 

@@ -227,3 +227,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+/*Aqui estara donde se va a redireccionar a las pag, al momento que le tome clic a boton de red social*/
+// Selecciona todos los botones de la lista
+            const botonesSociales = document.querySelectorAll('.wrapper .icon');
+
+            // Asigna la acción de clic a cada uno de ellos
+            botonesSociales.forEach(boton => {
+                boton.addEventListener('click', function() {
+                    // Obtiene el enlace personal del atributo data-url
+                    const urlPersonal = this.getAttribute('data-url');
+                    
+                    if (urlPersonal) {
+                        // Abre tu red social en una pestaña nueva de forma segura
+                        window.open(urlPersonal, '_blank', 'noopener,noreferrer');
+                    }
+                });
+            });
