@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE PADEL - Juega, Aprende y Compite</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Estilo_Ace_1.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO Y BARRA DE NAVEGACIÓN -->
+    <header id="main-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="Logo_AceP.png" alt="Logo ACE PADEL" id="logo" style="width: 80px; height: 80px; border-radius: 10px; object-fit: cover; background-color: #121212;">
+                <h1>ACE PADEL XALAPA</h1>
+            </div>
+            
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" data-target="inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#" data-target="servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#" data-target="clases" class="nav-link">Clases</a></li>
+                    <li><a href="#" data-target="conocenos" class="nav-link">Conócenos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        
+        <!-- PESTAÑA 1: INICIO -->
+        <section id="inicio" class="tab-section active-tab bg-inicio">
+            <div class="main-contour">
+                
+                <!-- NUEVO: Carrusel de imágenes escalable en lugar del banner fijo -->
+                <div class="hero-wrapper" id="carrusel-inicio">
+                    <!-- Aquí pones las imágenes. Para agregar más, solo copia y pega una línea de etiqueta <img> -->
+                    <!-- La clase 'active' indica qué imagen se muestra primero -->
+                    <img src="Costo_cancha.jpeg" class="slide active" alt="Imagen Inicio 1">
+                    <img src="Promo_Sabado_Domingo_1.jpeg" class="slide" alt="Imagen Inicio 2">
+                    <img src="Padel_Club.jpg" class="slide" alt="Imagen Inicio 3">
+                </div>
+
+                <div class="inicio-extras">
+                    <div class="extra-bloque">
+                        <img src="Comunidad.png" alt="Comunidad ACE PADEL" class="img-fluida">
+                        <div class="extra-texto">
+                            <h3>Vive la experiencia ACE PADEL</h3>
+                            <p>Más que un club, somos una comunidad. Únete a nuestros torneos relámpago, retas de fin de semana y eventos exclusivos para miembros. Aquí siempre encontrarás pareja para jugar y un ambiente inmejorable.</p>
+                        </div>
+                    </div>
+
+                    <div class="extra-bloque invertido">
+                        <img src="Instalaciones.png" alt="Instalaciones de primer nivel" class="img-fluida">
+                        <div class="extra-texto">
+                            <h3>Instalaciones de Primer Nivel</h3>
+                            <p>Diseñadas pensando en la comodidad del jugador. Contamos con áreas de descanso, iluminación LED antideslumbrante para juegos nocturnos y un diseño arquitectónico que te hará sentir como un profesional desde que entras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PESTAÑA 2: SERVICIOS -->
+        <section id="servicios" class="tab-section bg-servicios">
+            <div class="main-contour">
+                <div class="container-inner">
+                    <h2 class="section-title">Nuestros Servicios</h2>
+                    <!-- NUEVO: Texto indicativo para la galería interactiva -->
+                    <p class="texto-destacado" style="color: var(--neon); text-align: center; margin-bottom: 40px; cursor: pointer;">
+                        Para ver más imágenes de nuestros servicios, dar clic a un servicio de su elección.
+                    </p>
+                    
+                    <div class="servicios-detallados">
+                        
+                        <!-- NUEVO: atributo data-gallery en cada servicio para abrir su galería específica -->
+                        <div class="servicio-card clickable-service" data-gallery="canchas">
+                            <img src="Cancha_Padel1.jpg" alt="Renta de canchas" class="img-servicio">
+                            <div class="servicio-info">
+                                <h3>Renta de Canchas</h3>
+                                <p>Disfruta de nuestras canchas construidas bajo normativas internacionales. Cuentan con pasto sintético de última generación que previene lesiones, cristal templado panorámico para una visión perfecta y red profesional.</p>
+                            </div>
+                        </div>
+
+                        <div class="servicio-card clickable-service" data-gallery="equipo_renta">
+                            <img src="Equipo_Padel.jpg" alt="Renta de equipo" class="img-servicio">
+                            <div class="servicio-info">
+                                <h3>Renta de Equipo</h3>
+                                <p>Si estás empezando y aún no quieres invertir, te rentamos palas de gamas de iniciación e intermedias de las mejores marcas. Nuestro equipo recibe mantenimiento diario.</p>
+                            </div>
+                        </div>
+
+                        <div class="servicio-card clickable-service" data-gallery="equipo_compra">
+                            <img src="ComEquipo.jpg" alt="Tienda Pro-Shop" class="img-servicio">
+                            <div class="servicio-info">
+                                <h3>Compra de Equipo</h3>
+                                <p>Visita nuestra tienda física donde encontrarás palas de nivel profesional, intermedio y junior. Además, ofrecemos tubos de pelotas, muñequeras, ropa deportiva especializada y protectores.</p>
+                            </div>
+                        </div>
+
+                        <div class="servicio-card clickable-service" data-gallery="cafeteria">
+                            <img src="Cafeteria.jpg" alt="Cafetería y Snacks" class="img-servicio">
+                            <div class="servicio-info">
+                                <h3>Cafetería y Snacks</h3>
+                                <p>Recarga energía antes o después de tu partido. Ofrecemos deliciosos sándwiches preparados al momento, bebidas hidratantes, refrescos, café de especialidad y una gran variedad de botanas.</p>
+                            </div>
+                        </div>
+
+                        <div class="servicio-card clickable-service" data-gallery="clases_servicio">
+                            <img src="Clases_A.png" alt="Servicio de clases" class="img-servicio">
+                            <div class="servicio-info">
+                                <h3>Clases</h3>
+                                <p>Contamos con instructores certificados listos para llevar tu juego al siguiente nivel. Ofrecemos clases particulares o grupales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PESTAÑA 3: CLASES -->
+        <section id="clases" class="tab-section bg-clases">
+            <div class="main-contour">
+                <div class="container-inner">
+                    <h2 class="section-title">Clases de Pádel</h2>
+                    <div class="clases-intro">
+                        <p><strong>El pádel es para todos.</strong> Conoce nuestros paquetes diseñados específicamente para tu nivel y reserva tu lugar.</p>
+                    </div>
+
+                    <!-- NUEVO: Tablas de Precios (basado en imágenes proporcionadas) -->
+                    <div class="precios-container">
+                        
+                        <!-- Paquete 1 a 5 Clases -->
+                        <div class="precio-card">
+                            <h3 class="paquete-titulo">De 1 a 5 Clases</h3>
+                            <table class="tabla-precios">
+                                <tr><th>No. Alumnos</th><th>Costo x Persona</th><th>Costo Total</th></tr>
+                                <tr><td>1 persona</td><td>$500</td><td>$500</td></tr>
+                                <tr><td>2 personas</td><td>$320</td><td>$640</td></tr>
+                                <tr><td>3 personas</td><td>$290</td><td>$870</td></tr>
+                                <tr><td>4 personas</td><td>$250</td><td>$1,000</td></tr>
+                            </table>
+                        </div>
+
+                        <!-- Paquete 6 Clases -->
+                        <div class="precio-card">
+                            <h3 class="paquete-titulo">Paquete 6 Clases</h3>
+                            <table class="tabla-precios">
+                                <tr><th>No. Alumnos</th><th>Costo x Persona</th><th>Costo Paquete</th></tr>
+                                <tr><td>1 persona</td><td>$475</td><td>$2,850</td></tr>
+                                <tr><td>2 personas</td><td>$300</td><td>$3,600</td></tr>
+                                <tr><td>3 personas</td><td>$270</td><td>$4,860</td></tr>
+                                <tr><td>4 personas</td><td>$230</td><td>$5,520</td></tr>
+                            </table>
+                        </div>
+
+                        <!-- Paquete 8 Clases -->
+                        <div class="precio-card">
+                            <h3 class="paquete-titulo">Paquete 8 Clases</h3>
+                            <table class="tabla-precios">
+                                <tr><th>No. Alumnos</th><th>Costo x Persona</th><th>Costo Paquete</th></tr>
+                                <tr><td>1 persona</td><td>$450</td><td>$3,600</td></tr>
+                                <tr><td>2 personas</td><td>$285</td><td>$4,560</td></tr>
+                                <tr><td>3 personas</td><td>$265</td><td>$6,360</td></tr>
+                                <tr><td>4 personas</td><td>$220</td><td>$7,040</td></tr>
+                            </table>
+                        </div>
+
+                        <!-- Paquete 12 Clases -->
+                        <div class="precio-card">
+                            <h3 class="paquete-titulo">Paquete 12 Clases</h3>
+                            <table class="tabla-precios">
+                                <tr><th>No. Alumnos</th><th>Costo x Persona</th><th>Costo Paquete</th></tr>
+                                <tr><td>1 persona</td><td>$425</td><td>$5,100</td></tr>
+                                <tr><td>2 personas</td><td>$260</td><td>$6,240</td></tr>
+                                <tr><td>3 personas</td><td>$250</td><td>$9,000</td></tr>
+                                <tr><td>4 personas</td><td>$210</td><td>$10,080</td></tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <!-- NUEVO: Botón para solicitar paquete que abrirá un Modal -->
+                    <div style="text-align: center; margin-top: 40px;">
+                        <button id="btn-solicitar-clase" class="btn-submit" style="max-width: 300px;">Solicitar Paquete de Clases</button>
+                    </div>
+
+                    <hr class="divisor">
+
+                    <!-- Lista de niveles de clases intercaladas (Se mantiene para contexto) -->
+                    <div class="clases-lista">
+                        <div class="clase-row">
+                            <img src="Clase_Basico.jpg" alt="Clase Principiantes" class="img-clase">
+                            <div class="clase-texto">
+                                <h3>1. Principiante</h3>
+                                <p>Ideal si nunca has jugado. Aprenderás las reglas básicas, cómo empuñar la pala y los golpes fundamentales.</p>
+                            </div>
+                        </div>
+
+                        <div class="clase-row reversa">
+                            <img src="Clase_IntermedioB.jpg" alt="Clase Intermedio Básico" class="img-clase">
+                            <div class="clase-texto">
+                                <h3>2. Intermedio Básico</h3>
+                                <p>Para quienes ya pelotean. Nos enfocamos en las lecturas de bola con paredes, las voleas, el globo y la técnica de saque.</p>
+                            </div>
+                        </div>
+
+                        <div class="clase-row">
+                            <img src="Clase_IntermedioA.jpg" alt="Clase Intermedio Avanzado" class="img-clase">
+                            <div class="clase-texto">
+                                <h3>3. Intermedio Avanzado</h3>
+                                <p>Entrenamos golpes tácticos como la bandeja y la víbora, las bajadas de pared y el trabajo en equipo con tu pareja.</p>
+                            </div>
+                        </div>
+
+                        <div class="clase-row reversa">
+                            <img src="Clase_Avanzado.jpg" alt="Clase Avanzados" class="img-clase">
+                            <div class="clase-texto">
+                                <h3>4. Avanzado</h3>
+                                <p>Entrenamiento enfocado en competición. Perfeccionamiento biomecánico, estrategias de partido, y resistencia mental.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PESTAÑA 4: CONÓCENOS Y CONTACTO -->
+        <section id="conocenos" class="tab-section bg-conocenos">
+            <div class="main-contour">
+                <div class="container-inner">
+                    
+                    <div class="conocenos-historia">
+                        <h2 class="section-title">¿Quiénes Somos?</h2>
+                        <p class="texto-destacado">Ubicados en el corazón de Xalapa, Veracruz, <strong>ACE PADEL</strong> es el club definitivo para los amantes del deporte y la convivencia. Contamos con instalaciones de primer nivel.</p>
+                        
+                        <h3 class="sub-title">El Mundo del Pádel</h3>
+                        <div class="info-grid">
+                            <div class="info-card">
+                                <h4>¿Qué es el Pádel?</h4>
+                                <p>Es un deporte de raqueta que combina elementos del tenis y el squash. Se juega en parejas dentro de una pista cerrada, permitiendo que la pelota rebote en las paredes.</p>
+                            </div>
+                            <div class="info-card">
+                                <h4>Beneficios</h4>
+                                <p>Mejora la coordinación y agilidad. Es un excelente ejercicio cardiovascular que ayuda a quemar calorías, además de fomentar el trabajo en equipo y la socialización.</p>
+                            </div>
+                            <div class="info-card">
+                                <h4>Popularidad</h4>
+                                <p>Su éxito radica en la curva de aprendizaje. A diferencia de otros deportes, puedes divertirte desde el día uno gracias a distancias cortas y técnica intuitiva.</p>
+                            </div>
+                            <div class="info-card">
+                                <h4>Reglas Básicas</h4>
+                                <p>La puntuación es como el tenis. El saque es por debajo de la cintura y la pelota debe botar una vez en el suelo antes de tocar paredes. La estrategia lo es todo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="divisor">
+
+                    <h2 class="section-title">Encuéntranos</h2>
+                    <div class="contacto-wrapper">
+                        <div class="info-contacto">
+                            <div class="info-item">
+                                <h4>Ubicación</h4>
+                                <p>Jose Emparam Esquina, Av. 20 de Noviembre 2, 91064 Xalapa-Enríquez, Ver.</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Teléfono</h4>
+                                <p>Reserva o pide informes al: <strong>2284255456</strong></p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Correo Electrónico</h4>
+                                <p>contacto@acepadelxalapa.com</p>
+                            </div>
+                            
+                            <div class="info-item">
+                                <h4>Nuestras Redes</h4>
+                                <p>
+                                    <a href="#" style="color: var(--neon); text-decoration: none; display: block; margin-bottom: 5px;">Instagram: @acepadelxalapa</a>
+                                    <a href="#" style="color: var(--neon); text-decoration: none; display: block; margin-bottom: 5px;">TikTok: @acepadel_oficial</a>
+                                    <a href="#" style="color: var(--neon); text-decoration: none; display: block;">Facebook: ACE PADEL Xalapa</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- CAMBIO: Este formulario ahora enviará a WhatsApp mediante JavaScript -->
+                        <div class="form-contacto">
+                            <h4>Envíanos un mensaje</h4>
+                            <form id="contact-form-whatsapp">
+                                <input type="text" id="wa-nombre-contacto" placeholder="Tu Nombre" required>
+                                <input type="tel" id="wa-tel-contacto" placeholder="Tu Teléfono" required>
+                                <textarea id="wa-mensaje-contacto" rows="4" placeholder="¿En qué te podemos ayudar?" required></textarea>
+                                <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-content" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+            <p class="copyright" style="margin: 0;">&copy; 2026 ACE PADEL Xalapa. Todos los derechos reservados.</p>
+            
+            <div class="social-links-bar" style="display: flex; gap: 15px;">
+                <a href="#" class="social-icon-bar" style="font-weight: bold; font-size: 18px; text-decoration: none; color: var(--neon); border: 1px solid var(--neon); padding: 5px 10px; border-radius: 5px;">IG</a>
+                <a href="#" class="social-icon-bar" style="font-weight: bold; font-size: 18px; text-decoration: none; color: var(--neon); border: 1px solid var(--neon); padding: 5px 10px; border-radius: 5px;">TK</a>
+                <a href="#" class="social-icon-bar" style="font-weight: bold; font-size: 18px; text-decoration: none; color: var(--neon); border: 1px solid var(--neon); padding: 5px 10px; border-radius: 5px;">FB</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- NUEVO: VENTANAS EMERGENTES (MODALES)       -->
+    <!-- ========================================== -->
+
+    <!-- Modal para la Galería de Servicios -->
+    <div id="modal-galeria" class="modal-overlay">
+        <div class="modal-box gallery-box">
+            <span class="close-modal" id="close-gallery">&times;</span>
+            <div class="gallery-content">
+                <button id="btn-prev-img" class="btn-gallery">&#10094;</button>
+                <!-- Aquí se inyectará la imagen mediante JS -->
+                <img id="imagen-actual-galeria" src="" alt="Galería Servicios">
+                <button id="btn-next-img" class="btn-gallery">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Solicitar Paquete de Clases a WhatsApp -->
+    <div id="modal-clases" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal" id="close-clases">&times;</span>
+            <h3 style="color: var(--neon); margin-bottom: 20px; text-align: center;">Solicitud de Clases</h3>
+            <form id="form-solicitar-clases">
+                
+                <label>Nivel de Juego:</label>
+                <select id="req-nivel" required>
+                    <option value="" disabled selected>Selecciona un nivel...</option>
+                    <option value="Principiante">Principiante</option>
+                    <option value="Intermedio Básico">Intermedio Básico</option>
+                    <option value="Intermedio Avanzado">Intermedio Avanzado</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+
+                <label>Tipo de Paquete:</label>
+                <select id="req-paquete" required>
+                    <option value="" disabled selected>Selecciona un paquete...</option>
+                    <option value="1 a 5 Clases Individuales">1 a 5 Clases Individuales</option>
+                    <option value="Paquete de 6 Clases">Paquete de 6 Clases</option>
+                    <option value="Paquete de 8 Clases">Paquete de 8 Clases</option>
+                    <option value="Paquete de 12 Clases">Paquete de 12 Clases</option>
+                </select>
+
+                <label>Número de Personas:</label>
+                <select id="req-personas" required>
+                    <option value="" disabled selected>Selecciona cantidad...</option>
+                    <option value="1 Persona">1 Persona</option>
+                    <option value="2 Personas">2 Personas</option>
+                    <option value="3 Personas">3 Personas</option>
+                    <option value="4 Personas">4 Personas</option>
+                </select>
+
+                <label>Nombre Completo:</label>
+                <input type="text" id="req-nombre" placeholder="Ej. Juan Pérez" required>
+
+                <label>Teléfono:</label>
+                <input type="tel" id="req-tel" placeholder="Tu número de contacto" required>
+
+                <button type="submit" class="btn-submit" style="margin-top: 15px;">Enviar solicitud por WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Script principal -->
+    <script src="Funcion_Ace_Padel_1.js"></script>
+</body>
+</html>
